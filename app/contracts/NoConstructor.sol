@@ -3,7 +3,7 @@ pragma solidity ^0.8.9;
 
 import "./Inherited.sol";
 
-contract Father is Inherited {
+contract NoConstructor is Inherited {
     // Add your contract logic here
     uint256 public fatherNumber;
 
