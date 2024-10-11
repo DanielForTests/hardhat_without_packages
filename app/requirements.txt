@@ -1,0 +1,2 @@
+virtualenv==20.25.0
+# py-solc-x==2.0.2

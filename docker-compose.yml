@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  test-slither:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/app
+    tty: true
+    command: sleep infinity
+    
