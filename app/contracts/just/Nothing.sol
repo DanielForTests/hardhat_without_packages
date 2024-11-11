@@ -40,4 +40,8 @@ contract FancyContract is Lock {
     function weirdFunction() public pure returns (string memory) {
         return "This is a weird function!";
     }
+
+    function onlyOnCancun() public view returns (bool) {
+        return (block.basefee + (block.blobbasefee % 2)) == 0;
+    }
 }
